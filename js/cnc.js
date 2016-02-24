@@ -31,6 +31,7 @@ window.onload = function() {
             count++;
         } else {
             if ($.cookie("url")) {
+                client.disconnect();
                 openCookiePage();
             }
         }
@@ -42,10 +43,6 @@ window.onload = function() {
 
     soxEventListener.connected = function(soxEvent) {
         status("Connected: "+soxEvent.soxClient);
-        
-		setTimeout(function(){
-			client.disconnect();
-		}, 10000);
 
         var deviceNames = [
 			'そらまめ君連雀通り下連雀',

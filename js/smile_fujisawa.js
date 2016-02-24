@@ -11,8 +11,6 @@ var averageTemperature = 15.8;
 window.onload = function() {
     $.cookie("url", window.location.href, {expires: 1});
 
-    setTimeout("goResultPage()", 60000);
-    
     // SoxServerへ接続
     client = new SoxClient(boshService, xmppServer);
     var soxEventListener = new SoxEventListener();
@@ -22,6 +20,7 @@ window.onload = function() {
 
 		setTimeout(function(){
 			client.disconnect();
+            goResultPage();
 		}, 57000);
 
         var deviceNames = [
