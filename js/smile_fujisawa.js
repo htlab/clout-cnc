@@ -11,6 +11,8 @@ var averageTemperature = 15.8;
 window.onload = function() {
     $.cookie("url", window.location.href, {expires: 1});
 
+    setTimeout("goResultPage()", 60000);
+    
     // SoxServerへ接続
     client = new SoxClient(boshService, xmppServer);
     var soxEventListener = new SoxEventListener();
@@ -65,13 +67,13 @@ window.onload = function() {
 
             $.toast({
                 bgColor: '#32cd32',
-                text: "ありがとう！",
+                text: "いいねが溜まったよ！ありがとう！",
                 stack: true,
                 position: 'mid-center',
                 textAlign: 'center',
                 hideAfter: false
             });
-            setTimeout("openCNC()", 1500);
+            //setTimeout("openCNC()", 1500);
         }
     };
     soxEventListener.connectionFailed = function(soxEvent) {
@@ -160,14 +162,17 @@ window.onload = function() {
             var level = device.transducers[2].sensorData.rawValue;
 
             setCurrentSmileLevel(level);
+            setSmileBoxLevel(level);
         }
         if (device.name == "そらまめ君藤沢市役所") {
             // DO SOMETHING
+            no2 = device.transducers[6].sensorData.rawValue;
+            processEnvironmentalIndex(no2);
         }
     };
 
     soxEventListener.published = function(soxEvent){
-        goResultPage();
+        //goResultPage();
     }
     
     client.setSoxEventListener(soxEventListener);

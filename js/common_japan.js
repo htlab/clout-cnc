@@ -30,6 +30,57 @@ function getWeatherNumber(value) {
 
     return number;
 }
+
+function calcEnvironmentalIndex(no2){
+    if (isNaN(Number(no2))){
+        no2 = 0;
+    }
+    var value = Math.floor(100 - no2*6); 
+    if (value > 100){
+        value = 100;
+    } else if (value < 0){
+        value = 0;
+    }
+    return value;
+}
+
+function processEnvironmentalIndex(no2){
+    setEnvironmentalDesc(calcEnvironmentalIndex(no2));
+}
+
+function calcWashingIndex(temperature, humidity, windspeed, avgTemp, avgHum){
+
+    if (isNaN(Number(temperature)) || temperature == ""){
+        temperature =avgTemp;
+    } else {
+        temperature = Number(temperature);
+    }
+
+    if (isNaN(Number(humidity)) || humidity == ""){
+        humidity = avgHum;
+    } else {
+        humidity = Number(humidity);
+    }
+
+    if (isNaN(Number(windspeed)) || windspeed == ""){
+        windspeed = 0;
+    } else {
+        windspeed = Number(humidity);
+    }
+    var index = 100 
+        - ((humidity - avgHum) * 1.5)
+        + ((temperature - avgTemp) * 0.8)
+        + (windspeed * 1);
+
+    if (index > 100){
+        index = 100;
+    } else if (index < 0){
+        index = 0;
+    }
+
+    return Math.floor(index);
+}
+
 function processWashingIndex(temperature, windspeed, humidity) {
     var message = "";
     var washingIndex = 100;
@@ -66,6 +117,18 @@ function setWashingIndex(washingIndex, message) {
     $("#washing-index").html(washingIndex);
     $("#washing-desc").html(message);
 }
+
+function calcLivingIndex(temperature, humidity){
+    var message = "";
+    var base = 70;
+    var discomfortIndex = 0.81 * temperature
+        + 0.01 * humidity * (0.99 * temperature - 14.3)
+        + 46.3;
+
+    var livingIndex = Math.floor(100 - 3 * Math.abs(base - discomfortIndex));
+    return livingIndex;
+}
+
 function processLivingIndex(temperature, humidity) {
     var message = "";
     var base = 70;
@@ -125,4 +188,10 @@ function setRainyPercentage(percentage) {
 }
 function setCurrentSmileLevel(level) {
     $("#smile-data").html(level);
+}
+function setSmileBoxLevel(level) {
+    $("#smile-desc").html(level);
+}
+function setEnvironmentalDesc(index) {
+    $("#environmental-index").html(index);
 }
