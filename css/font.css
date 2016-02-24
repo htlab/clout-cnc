@@ -1,0 +1,58 @@
+/**
+ * font.css
+ * @author richie
+ *
+ */
+@font-face {
+	font-family:'jiyucho';
+	src:url('./Jiyucho.ttf');
+}
+
+@font-face {
+	font-family:'tegaki';
+	src:url('./Gyate-Luminescence.ttf');
+}
+
+@font-face {
+	font-family:'segoe';
+	src:url('./segoe-r.ttf');
+}
+
+/* For static message field  */
+
+div#header{
+	/* font-family: Papyrus, fantasy; */
+	font-family: segoe;
+	font-size: 60px;
+	color:white;
+}
+
+
+span.red{
+	color:red;
+}
+
+span.blue{
+	color:yellow;
+}
+
+.important {
+    color: red;
+    font-family: 'bold';
+}
+
+.warning {
+    color: yellow;
+    font-family: 'bold';
+}
+
+.normal {
+    color: green;
+    font-family: 'bold';
+}
+
+.moderate {
+    color: blue;
+    font-family: 'bold';
+}
+

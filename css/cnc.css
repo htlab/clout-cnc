@@ -1,0 +1,81 @@
+html{
+    height: 100%;
+}
+body{
+    display: inline;
+    min-height: 100%;
+}
+div#title-area{
+    min-height: 16vh;
+    background: no-repeat;
+    background-image:url(../img/cnc_title.png);
+    background-size: contain;
+    background-position: center center;
+}
+div#content-area{
+    min-height: 73vh;
+    background: no-repeat;
+    background-image:url(../img/clout.png);
+    background-size: contain;
+    background-position: center center;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+div#footer-area{
+    min-height: 5vh;
+    background: no-repeat;
+    background-image:url(../img/footer.png);
+    background-size: contain;
+    background-position: center center;
+}
+div.inner-contents{
+    /*
+    height: 60vh;
+    margin: 2% 2.5% 0 2.5%;
+    */
+    height: 45vh;
+    margin: 5% 2.5% 0 2.5%;
+    width: 20%;
+    background: rgba(248, 194, 149, 0.8);
+    float: left;
+    border-radius: 20px;
+}
+h2{
+    margin-top: 10%;
+    min-height: 15%;
+    font-size: 180%;
+    text-align: center;
+}
+img.flag{
+    width: auto;
+    height: auto;
+    max-width: 10%;
+    vertical-align: middle;
+}
+.data-area{
+    margin-left: 10%;
+}
+.data{
+    margin: 10% 0 0 -10%;
+    font-size: 250%;
+    text-align: center;
+}
+img.smile{
+    margin-left: -10%;
+    width: auto;
+    height: auto;
+    max-width: 60%;
+    vertical-align: middle;
+}
+img.cross{
+    margin: 0 2% 0 -1%;
+    width: auto;
+    height: auto;
+    max-width: 5%;
+    vertical-align: middle;
+}
+span.smile-data{
+    font-size: 150%;
+}
+p{
+    font-size: 120%;
+}

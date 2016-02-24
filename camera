@@ -1,0 +1,15 @@
+<div class="smile widget" id="widget_smile">
+	<div>
+		Your Smile
+	</div>
+	<div class="smile" id="container">
+		<video class="smile" id="videoel" width="300" height="225" preload="auto" loop></video>
+		<canvas class="smile" id="nosepoint_overlay" width="300" height="225"></canvas>
+		<canvas class="smile" id="textinfo_overlay" width="300" height="225"></canvas>
+	</div>
+	<div id="gauge_title">
+		Smile Gauge
+	</div>
+    <div id="gauge_smile">
+    </div>
+</div>

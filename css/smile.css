@@ -1,0 +1,40 @@
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+div#title-area{
+    min-height: 16vh;
+    background: no-repeat;
+    background-image:url(../img/cnc_title.png);
+    background-size: contain;
+    background-position: center center;
+}
+div#content-area{
+    min-height: 77vh;
+    background: no-repeat;
+    background-image:url(../img/clout.png);
+    background-size: contain;
+    background-position: center center;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+div#footer-area{
+    min-height: 5vh;
+    background: no-repeat;
+    background-image:url(../img/footer.png);
+    background-size: contain;
+    background-position: center center;
+}
+img.smile{
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+}
+img.cross{
+    margin: 0 2% 0 -1%;
+    width: auto;
+    height: auto;
+    max-width: 5%;
+    vertical-align: middle;
+}

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+  <head>
+    <title>ClouT CnC Board</title>
+    <meta charset="utf-8">
+    <link href="./css/init.css" rel="stylesheet" type="text/css">
+
+    <!-- clmtrackr library -->
+    <script src="./models/model_pca_20_svm_emotionDetection.js"></script>
+    <script src="./js/clmtrackr/Stats.js"></script>
+    <script src="./js/lib/d3.min.js"></script>
+    <script src="./js/clmtrackr/emotion_classifier.js"></script>
+    <script src="./js/clmtrackr/emotionmodel.js"></script>
+    <script src="./js/clmtrackr/utils.js"></script>
+    <script src="./js/clmtrackr/clmtrackr.js"></script>
+
+    <!-- sox library -->
+    <script src="./js/lib/jquery-1.10.2.js"></script>
+    <script src="./js/lib/jquery.dropotron.min.js"></script>
+    <script src="./js/lib/config.js"></script>
+    <script src="./js/lib/underscore-min.js"></script>
+    <script src="./js/lib/backbone.js"></script>
+    <script src="./js/lib/strophe.js"></script>
+    <script src="./js/lib/sox.strophe.pubsub.js"></script>
+    <script src="./js/lib/strophe.x.js"></script>
+    <script src="./js/lib/jscron.js"></script>
+
+    <script src="./js/sox/SoxClient.js"></script>
+    <script src="./js/sox/SoxEventListener.js"></script>
+    <script src="./js/sox/Device.js"></script>
+    <script src="./js/sox/Transducer.js"></script>
+    <script src="./js/sox/SensorData.js"></script>
+    <script src="./js/common_japan.js?date=moge"></script>
+    <script src="./js/smile_fujisawa.js?date=moge"></script>
+
+    <!-- Others -->
+    <script src="./js/jquery.toast.js"></script>
+    <script src="./js/jquery.cookie.min.js"></script>
+  </head>
+  <body>
+    <div id="fujisawa-title-area"></div>
+    <div id="content-area">
+      <div id="camera" class="inner-contents">
+        <h2>スマイル度</h2>
+        <p>
+          この情報が役に立ったらカメラに向かってスマイル！</br>
+          笑顔をキープで<span class="like"> いいね </span>ができるよ！がんばって！
+        </p>
+        <div id="container">
+          <video class="smile" id="videoel" width="300" height="225" preload="auto" loop></video>
+          <canvas class="smile" id="nosepoint_overlay" width="300" height="225"></canvas>
+          <canvas class="smile" id="textinfo_overlay" width="300" height="225"></canvas>
+          <div id="gauge_smile"></div>
+        </div>
+        <div>
+          <center>
+          <h4>今日集まったいいね</h4>
+          <div id="today-smile">
+            <img id="smile-img" src="./img/smile.png"></img>
+            <img id="cross-img" src="./img/cross.png"></img>
+            <span id="smile-data">10</span>
+          </div>
+          </center>
+        </div>
+      </div>
+      <div id="living" class="inner-contents">
+        <h2>生活指数</h2>
+        <div class="data-area">
+          <p>指数：
+            <span id="living-index" class="data">0</span>
+          </p>
+          <div id="living-desc" class="data">今日はとても寒そう...</div>
+        </div>
+      </div>
+      <!--
+      <div id="driving" class="inner-contents">
+        <h2>ドライブ度</h2>
+        <div class="data-area">
+          <p>指数：
+            <span id="driving-index" class="data">0</span>
+          </p>
+          <div id="driving-desc" class="data">今日はドライブに出かけよう!</div>
+        </div>
+      </div>
+      //-->
+      <div id="washing" class="inner-contents">
+        <h2>洗濯指数</h2>
+        <div class="data-area">
+          <p>指数：
+          <span id="washing-index" class="data">0</span>
+          </p>
+          <div id="washing-desc" class="data">外に干すと洗濯物が乾きそう</div>
+        </div>
+      </div>
+      <div id="dry" class="inner-contents mini">
+        <h2>乾燥度</h2>
+        <div class="data-area">
+          <div id="dry-desc" class="data">今日はあまり乾燥していないみたい</div>
+        </div>
+      </div>
+      <div id="raining-rate" class="inner-contents mini">
+        <h2>降水確率</h2>
+        <div class="data-area">
+          <span id="raining-desc" class="data">20%</span>
+        </div>
+      </div>
+    </div>
+    <div id="footer-area"></div>
+    </center>
+  </body>
+  <footer>
+    <script src="./js/main.js"></script>
+
+    <link href="./css/font.css" rel="stylesheet" type="text/css">
+    <link href="./css/jquery.toast.css" rel="stylesheet" type="text/css">
+    <link href="./css/integrate.css" rel="stylesheet" type="text/css">
+  </footer>
+</html>

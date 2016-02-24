@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+html{
+    height: 100%;
+}
+body{
+    display: inline;
+    min-height: 100%;
+    font-family: segoe;
+    color: black;
+    /*	background-color: #2D2D2D; */
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = '#121647', endColorstr = '#3d5585');
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = '#121647', endColorstr = '#3d5585')";
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    /*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+    /* max-width: 1150px; */
+}
+h2{
+    margin-bottom: 10px;
+    min-height: 15%;
+    font-size: 180%;
+    text-align: center;
+    color: #800000;
+}
+div#title-area{
+    min-height: 16vh;
+    background: no-repeat;
+    background-image:url(../img/genova_title.png);
+    background-size: contain;
+    background-position: center center;
+}
+div#content-area{
+    min-height: 73vh;
+    background: no-repeat;
+    background-image:url(../img/clout.png);
+    background-size: contain;
+    background-position: center center;
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+div#footer-area{
+    min-height: 5vh;
+    background: no-repeat;
+    background-image:url(../img/footer.png);
+    background-size: contain;
+    background-position: center center;
+}
+div.inner-contents{
+    height: 30vh;
+    width: 20%;
+    margin: 2% 0% 0 2.5%;
+    background: rgba(248, 194, 149, 0.8);
+    float: left;
+    border-radius: 20px;
+}
+div.mini{
+    height: 25vh;
+}
+div#camera{
+    margin-left: 5%;
+    height: 60vh;
+    width: 45%;
+    background: rgba(135, 206, 235, 0.95);
+    float: left;
+    border-radius: 20px;
+}
+div#camera p{
+    text-align: center;
+    margin: 0 10% 3% 10%;
+    font-size: 100%;
+}
+div#raining-rate .data-area{
+    text-align: center;
+    color: #008000;
+}
+img#smile-img{
+    width: 15%;
+    vertical-align: middle;
+}
+img#cross-img{
+    width: 5%;
+    vertical-align: middle;
+}
+span#raining-desc{
+    font-size: 300%;
+}
+span#smile-data{
+    vertical-align: middle;
+    font-size: 180%;
+}
+.data-area{
+    margin: 0 10% 0 10%;
+    font-size: 130%;
+}
+.data{
+    margin: 0 0 0 0;
+}
+.smile {
+  width: 300px;
+  height: 225px;
+}
+
+#nosepoint_overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph;
+  /*IE*/
+  filter: fliph;
+  /*IE*/ 
+}
+
+#textinfo_overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -ms-filter: fliph;
+  /*IE*/
+  filter: fliph;
+  /*IE*/ }
+
+#videoel {
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph;
+  /*IE*/
+  filter: fliph;
+  /*IE*/ }
+
+#container {
+  margin-left: 5%;
+  width: 300px;
+  position: relative;
+  float: left;
+}
+#gauge_title {
+  font-size: 75%;
+  margin-top: 10px; }
+#gauge_smile {
+  width: 100%;
+  height: 2vh;
+  margin-top: 10px;
+  margin-right: 20px;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = '#ff1738', endColorstr = '#e8ff29');
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = '#ff1738', endColorstr = '#e8ff29')";
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  background-image: -moz-linear-gradient(left, #ff1738, #e8ff29);
+  background-image: -ms-linear-gradient(left, #ff1738, #e8ff29);
+  background-image: -o-linear-gradient(left, #ff1738, #e8ff29);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff1738), to(#e8ff29));
+  background-image: -webkit-linear-gradient(left, #ff1738, #e8ff29);
+  background-image: linear-gradient(left, #ff1738, #e8ff29);
+  /*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/ }
+.blank{
+    height: 5vh;
+}

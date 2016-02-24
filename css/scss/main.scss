@@ -1,0 +1,338 @@
+$display_width: 1920px;
+$display_height: 1080px;
+
+$smile_gauge_margintop: 10px;
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+body {
+	font-family: segoe;
+	font-size: 30px;
+	color:white;
+/*	background-color: #2D2D2D; */
+
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = '#121647', endColorstr = '#3d5585');
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = '#121647', endColorstr = '#3d5585')";
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    background-image: -moz-linear-gradient(left, #121647, #3d5585);
+    background-image: -ms-linear-gradient(left, #121647, #3d5585);
+    background-image: -o-linear-gradient(left, #121647, #3d5585);
+    background-image: -webkit-gradient(linear, left top, right top, from(#121647), to(#3d5585));
+    background-image: -webkit-linear-gradient(left, #121647, #3d5585);
+    background-image: linear-gradient(left, #121647, #3d5585);
+    /*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+
+	margin: 30px 30px;
+	/* max-width: 1150px; */
+}
+
+.smile {
+	width : 300px;
+	height : 225px;
+}
+
+#nosepoint_overlay {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	-o-transform : scaleX(-1);
+	-webkit-transform : scaleX(-1);
+	transform : scaleX(-1);
+	-ms-filter : fliph; /*IE*/
+	filter : fliph; /*IE*/
+
+}
+
+#textinfo_overlay {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	-ms-filter : fliph; /*IE*/
+	filter : fliph; /*IE*/
+
+}
+
+#videoel {
+	-o-transform : scaleX(-1);
+	-webkit-transform : scaleX(-1);
+	transform : scaleX(-1);
+	-ms-filter : fliph; /*IE*/
+	filter : fliph; /*IE*/
+}
+
+#container {
+	position : relative;
+}
+
+#content {
+	margin-top : 35px;
+	width:$display_width;
+	height:$display_height;
+}
+
+
+h2 {
+	font-weight : 400;
+}
+
+
+#headtitle{
+    position: absolute;
+    top: 0.5%;
+}
+
+.widget {
+	margin: 20px 20px 20px 20px;
+}
+
+#widget_smile {
+	position : absolute;
+	top : 0%;
+	left: 0%;
+	margin-left:30px;
+	margin-right:30px;
+	margin-top:30px;
+	/*border: 10px solid #666699; */
+}
+
+#leftpart{
+	position : absolute;
+	top:10%;
+	left:2%;
+	width:48%;
+	height:80%;
+	margin-top:30px;
+}
+
+#rightpart{
+	position : absolute;
+	top:10%;
+	left:51%;
+	width:48%;
+	height:80%;
+	margin-top:30px;
+}
+
+#left_upper{
+	position : absolute;
+	background-color:#B22222;
+	width:100%;
+	height:50%;
+	top:0%;
+	left:0%;
+}
+
+#left_lower{
+	position : absolute;
+	width:100%;
+	height:50%;
+	top:50%;
+	left:0%;
+	margin-top:10px;
+}
+
+#left_lower_left{
+	position : absolute;
+	width:50%;
+	height:100%;
+	top:0%;
+	left:0%;
+}
+
+#left_lower_right{
+	position : absolute;
+	width:50%;
+	height:100%;
+	top:0%;
+	left:50%;
+}
+
+#weather{
+	background-color: #27CDCD;
+	position : absolute;
+	width:100%;
+	height:25%;
+	top:15%;
+	left:0%;
+}
+
+#temperature{
+	background-color: #1E90FF;
+	position : absolute;
+	width:100%;
+	height:25%;
+	top:45%;
+	left:0%;
+
+}
+
+#humidity{
+	background-color: #7B68EE;
+	position : absolute;
+	width:100%;
+	height:25%;
+	top:75%;
+	left:0%;
+}
+
+.widget_text_left{
+	margin-left:5px;
+}
+
+.widget_text_city{
+	margin-left:5px;
+    font-size:40px;
+}
+
+#right_top{
+    background-color: #07682E;
+	position : absolute;
+ 	width:100%;
+	height:31%;
+	top:0%;
+	left:0%;
+}
+
+#right_middle{
+    background-color: #487A00;
+	position : absolute;
+	width:100%;
+	height:31%;
+	top:34%;
+	left:0%;
+}
+
+#right_bottom{
+    background-color: #046658;
+	position : absolute;
+	width:100%;
+	height:31%;
+	top:68%;
+	left:0%;
+}
+
+.widget_text_content{
+    position: absolute;
+    font-size:50px;
+    color:black;
+    width:30%;
+    right:3%;
+    bottom:18%;
+}
+
+.imageicon_good{
+    position: absolute;
+    left: 1%;
+    bottom: 3%;
+    background-image:url("../img/heart.png");
+    width:12%;
+    height:12%;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.imageicon_weather{
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    background-image:url("../img/sunny.png");
+    width:20%;
+    height:80%;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.imageicon_picture{
+    position: absolute;
+    left: 30%;
+    top: 12%;
+    width:40%;
+    height:80%;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+
+.text_good_left{
+    position: absolute;
+    left: 8%;
+    bottom: 4%;
+    width:12%;
+    height:12%;
+    font-size:140%;
+}
+
+.text_good_right{
+    position: absolute;
+    left: 6%;
+    bottom: 6%;
+    width:12%;
+    height:12%;
+}
+
+.text_explanation_left{
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    width:37%;
+    height:90%;
+    font-size:24px;
+    word-wrap: break-word;
+}
+
+.text_explanation_right{
+    position: absolute;
+    right: 17%;
+    top: 40%;
+    width:12%;
+    height:12%;
+    font-size:40px;
+}
+
+#fujisawa_picture{
+    background-image:url("../img/shirasu.jpg");
+    left:25%;
+    width:35%;
+    top:10%;
+    bottom:10%;
+}
+#mitaka_picture{
+    background-image:url("../img/ramen.jpg");
+}
+#santander_picture{
+    background-image:url("../img/paella.jpg");
+}
+#jenova_picture{
+    background-image:url("../img/pasta.jpg");
+}
+
+#gauge_title{
+    margin-top:$smile_gauge_margintop;
+}
+
+#gauge_smile{
+    width:100%;
+    height:15%;
+    margin-top:$smile_gauge_margintop;
+    margin-right:20px;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = '#ff1738', endColorstr = '#e8ff29');
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = '#ff1738', endColorstr = '#e8ff29')";
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    background-image: -moz-linear-gradient(left, #ff1738, #e8ff29);
+    background-image: -ms-linear-gradient(left, #ff1738, #e8ff29);
+    background-image: -o-linear-gradient(left, #ff1738, #e8ff29);
+    background-image: -webkit-gradient(linear, left top, right top, from(#ff1738), to(#e8ff29));
+    background-image: -webkit-linear-gradient(left, #ff1738, #e8ff29);
+    background-image: linear-gradient(left, #ff1738, #e8ff29);
+    /*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+}

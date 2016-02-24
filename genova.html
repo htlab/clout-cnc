@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+  <head>
+    <title>ClouT CnC Board</title>
+    <meta charset="utf-8">
+    <link href="./css/init.css" rel="stylesheet" type="text/css">
+
+    <!-- clmtrackr library -->
+    <script src="./models/model_pca_20_svm_emotionDetection.js"></script>
+    <script src="./js/clmtrackr/Stats.js"></script>
+    <script src="./js/lib/d3.min.js"></script>
+    <script src="./js/clmtrackr/emotion_classifier.js"></script>
+    <script src="./js/clmtrackr/emotionmodel.js"></script>
+    <script src="./js/clmtrackr/utils.js"></script>
+    <script src="./js/clmtrackr/clmtrackr.js"></script>
+
+    <!-- sox library -->
+    <script src="./js/lib/jquery-1.10.2.js"></script>
+    <script src="./js/lib/jquery.dropotron.min.js"></script>
+    <script src="./js/lib/config.js"></script>
+    <script src="./js/lib/underscore-min.js"></script>
+    <script src="./js/lib/backbone.js"></script>
+    <script src="./js/lib/strophe.js"></script>
+    <script src="./js/lib/sox.strophe.pubsub.js"></script>
+    <script src="./js/lib/strophe.x.js"></script>
+    <script src="./js/lib/jscron.js"></script>
+
+    <script src="./js/sox/SoxClient.js"></script>
+    <script src="./js/sox/SoxEventListener.js"></script>
+    <script src="./js/sox/Device.js"></script>
+    <script src="./js/sox/Transducer.js"></script>
+    <script src="./js/sox/SensorData.js"></script>
+    <script src="./js/smile.js"></script>
+
+    <script src="./js/genova.js"></script>
+    <script src="./js/smile_genova.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!-- Others -->
+    <script src="./js/jquery.toast.js"></script>
+    <script src="./js/jquery.cookie.min.js"></script>
+  </head>
+  <body>
+    <div id="genova-title-area"></div>
+    <div id="content-area">
+      <div id="camera" class="inner-contents">
+        <h2>Smile Degree</h2>
+        <p>
+          Smile at the camera when this information feels good!</br>
+          Keep the smile and <span class="like">LIKE</span> to the information, try it!
+        </p>
+        <div id="container">
+          <video class="smile" id="videoel" width="300" height="225" preload="auto" loop></video>
+          <canvas class="smile" id="nosepoint_overlay" width="300" height="225"></canvas>
+          <canvas class="smile" id="textinfo_overlay" width="300" height="225"></canvas>
+          <div id="gauge_smile"></div>
+        </div>
+        <div>
+          <center>
+          <h4>Collected LIKEs Today</h4>
+          <div id="today-smile">
+            <img id="smile-img" src="./img/smile.png"></img>
+            <img id="cross-img" src="./img/cross.png"></img>
+            <span id="smile-data">10</span>
+          </div>
+          </center>
+        </div>
+      </div>
+      <div id="living" class="inner-contents">
+        <h2>Living Index</h2>
+        <div class="data-area">
+          <p>Index: 
+            <span id="living-index" class="data">0</span>
+          </p>
+          <div id="living-desc" class="data"></div>
+        </div>
+      </div>
+      <div id="washing" class="inner-contents">
+        <h2>Washing Index</h2>
+        <div class="data-area">
+          <p>Index:
+          <span id="washing-index" class="data">0</span>
+          </p>
+          <div id="washing-desc" class="data"></div>
+        </div>
+      </div>
+      <div id="dry" class="inner-contents mini">
+        <h2>Dryness</h2>
+        <div class="data-area">
+          <div id="dry-desc" class="data"></div>
+        </div>
+      </div>
+      <div id="raining-rate" class="inner-contents mini">
+        <h2>Raining Rate</h2>
+        <div class="data-area">
+          <span id="raining-desc" class="data">20</span>%
+        </div>
+      </div>
+    </div>
+    <div id="footer-area"></div>
+    </center>
+  </body>
+  <footer>
+    <script src="./js/main.js"></script>
+
+    <link href="./css/integrate.css" rel="stylesheet" type="text/css">
+    <link href="./css/font.css" rel="stylesheet" type="text/css">
+    <link href="./css/jquery.toast.css" rel="stylesheet" type="text/css">
+  </footer>
+</html>

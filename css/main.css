@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  font-family: segoe;
+  color: black;
+  /*	background-color: #2D2D2D; */
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = '#121647', endColorstr = '#3d5585');
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = '#121647', endColorstr = '#3d5585')";
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  /*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+  /* max-width: 1150px; */
+}
+
+.smile {
+  width: 300px;
+  height: 225px;
+}
+
+#nosepoint_overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph;
+  /*IE*/
+  filter: fliph;
+  /*IE*/ 
+}
+
+#textinfo_overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -ms-filter: fliph;
+  /*IE*/
+  filter: fliph;
+  /*IE*/ }
+
+#videoel {
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph;
+  /*IE*/
+  filter: fliph;
+  /*IE*/ }
+
+#container {
+  margin-left: 5%;
+  width: 300px;
+  position: relative;
+  float: left;
+}
+
+#gauge_title {
+  font-size: 75%;
+  margin-top: 10px; }
+
+#gauge_smile {
+  width: 100%;
+  height: 2vh;
+  margin-top: 10px;
+  margin-right: 20px;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = '#ff1738', endColorstr = '#e8ff29');
+  /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr = '#ff1738', endColorstr = '#e8ff29')";
+  /*Element must have a height (not auto)*/
+  /*All filters must be placed together*/
+  background-image: -moz-linear-gradient(left, #ff1738, #e8ff29);
+  background-image: -ms-linear-gradient(left, #ff1738, #e8ff29);
+  background-image: -o-linear-gradient(left, #ff1738, #e8ff29);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff1738), to(#e8ff29));
+  background-image: -webkit-linear-gradient(left, #ff1738, #e8ff29);
+  background-image: linear-gradient(left, #ff1738, #e8ff29);
+  /*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/ }
+
+.blank{
+    height: 5vh;
+}

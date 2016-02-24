@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+  <head>
+    <title>ClouT CnC Board</title>
+    <meta charset="utf-8">
+    <!-- Style sheets -->
+
+    <!-- clmtrackr library -->
+    <script src="./models/model_pca_20_svm_emotionDetection.js"></script>
+    <script src="./js/clmtrackr/Stats.js"></script>
+    <script src="./js/lib/d3.min.js"></script>
+    <script src="./js/clmtrackr/emotion_classifier.js"></script>
+    <script src="./js/clmtrackr/emotionmodel.js"></script>
+    <script src="./js/clmtrackr/utils.js"></script>
+    <script src="./js/clmtrackr/clmtrackr.js"></script>
+
+    <!-- sox library -->
+    <script src="./js/lib/jquery-1.10.2.js"></script>
+    <script src="./js/lib/jquery.dropotron.min.js"></script>
+    <script src="./js/lib/config.js"></script>
+    <script src="./js/lib/underscore-min.js"></script>
+    <script src="./js/lib/backbone.js"></script>
+    <script src="./js/lib/strophe.js"></script>
+    <script src="./js/lib/sox.strophe.pubsub.js"></script>
+    <script src="./js/lib/strophe.x.js"></script>
+    <script src="./js/lib/jscron.js"></script>
+
+    <script src="./js/sox/SoxClient.js"></script>
+    <script src="./js/sox/SoxEventListener.js"></script>
+    <script src="./js/sox/Device.js"></script>
+    <script src="./js/sox/Transducer.js"></script>
+    <script src="./js/sox/SensorData.js"></script>
+    <script src="./js/smile.js"></script>
+
+    <!-- Others -->
+    <script src="./js/jquery.toast.js"></script>
+  </head>
+  <body>
+    <div id="title-area"></div>
+    <div id="content-area">
+      <div class="blank"></div>
+        <div class="blank"></div>
+      <div id="backboard">
+        <div class="blank"></div>
+        <div class="smile widget" id="widget_smile">
+          <div class="smile" id="container">
+            <video class="smile" id="videoel" height="300" width="250" preload="auto" loop></video>
+            <canvas class="smile" id="nosepoint_overlay" height="300" width="250"></canvas>
+            <canvas class="smile" id="textinfo_overlay" height="300" width="250"></canvas>
+          </div>
+          <div id="gauge_title">
+            ゲージをいっぱいにして</n>
+            笑顔を集めよう！
+          </div>
+          <div id="gauge_smile">
+          </div>
+        </div>
+        <div class="blank"></div>
+        <div class="blank"></div>
+        <div id="data-area" class="widget">
+          <h2 class="no-margin">今日集まった笑顔</h2>
+          <p class="no-margin">
+            <img class="smile" src="./img/smile.png"></img>
+            <img class="cross" src="./img/cross.png"></img>
+            <span id="smile-data">0</span>
+          </p>
+        </div>
+      </div>
+      <!--
+      <div id="data-widget">
+        <h2>今日集まった笑顔</h2>
+      </div>
+      //-->
+    </div>
+    <div id="footer-area"></div>
+  </body>
+  <footer>
+    <script src="./js/main.js"></script>
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <link href="./css/smile.css" rel="stylesheet" type="text/css">
+    <link href="./css/font.css" rel="stylesheet" type="text/css">
+    <link href="./css/jquery.toast.css" rel="stylesheet" type="text/css"></script>
+  </footer>
+</html>

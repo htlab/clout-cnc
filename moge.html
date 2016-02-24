@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+  <head>
+    <title>ClouT CnC Board</title>
+    <meta charset="utf-8">
+    <!-- Style sheets -->
+    <link href="./css/init.css" rel="stylesheet" type="text/css">
+    <link href="./css/font.css" rel="stylesheet" type="text/css">
+
+    <!-- sox library -->
+    <script src="./js/lib/jquery-1.10.2.js"></script>
+    <script src="./js/lib/jquery.dropotron.min.js"></script>
+    <script src="./js/lib/config.js"></script>
+    <script src="./js/lib/underscore-min.js"></script>
+    <script src="./js/lib/backbone.js"></script>
+    <script src="./js/lib/strophe.js"></script>
+    <script src="./js/lib/sox.strophe.pubsub.js"></script>
+    <script src="./js/lib/strophe.x.js"></script>
+    <script src="./js/lib/jscron.js"></script>
+
+    <script src="https://www.ht.sfc.keio.ac.jp/~shinny/fujisawa-2015f/renewal/js/sox/SoxClient.js"></script>
+    <script src="./js/sox/SoxEventListener.js"></script>
+    <script src="./js/sox/Device.js"></script>
+    <script src="./js/sox/Transducer.js"></script>
+    <script src="./js/sox/SensorData.js"></script>
+    <script src="./js/cnc.js"></script>
+    <script src="./js/jquery.cookie.min.js"></script>
+  </head>
+  <body>
+    <div id="title-area"></div>
+    <div id="content-area">
+      <div id="mitaka" class="inner-contents">
+        <h2>三鷹
+        <img class="flag" src="./img/flag-jp.png"></img>
+        </h2>
+        <div class="data-area">
+          <!--
+          <p>今日の空気キレイ度</p>
+          <div id="mitaka-smile" class="data">
+            0
+          </div>
+          //-->
+          <p>今日集まったいいね</p>
+          <p>
+          <img class="smile" src="./img/smile.png">
+          <img class="cross" src="./img/cross.png"></img>
+          <span id="mitaka-smile" class="smile-data">0</span>
+          </p>
+        </div>
+      </div>
+      <div id="genova" class="inner-contents">
+        <h2>ジェノバ
+        <img class="flag" src="./img/flag-it.png"></img>
+        </h2>
+        <div class="data-area">
+          <!--
+          <p>今日の空気キレイ度</p>
+          <div id="genova-smile" class="data">
+            0
+          </div>
+          //-->
+          <p>今日集まったいいね</p>
+          <p>
+          <img class="smile" src="./img/smile.png">
+          <img class="cross" src="./img/cross.png"></img>
+          <span id="genova-smile" class="smile-data">0</span>
+          </p>
+        </div>
+      </div>
+      <div id="santander" class="inner-contents">
+        <h2>サンタンデール
+        <img class="flag" src="./img/flag-es.png"></img>
+        </h2>
+        <div class="data-area">
+          <!--
+          <p>今日の空気キレイ度</p>
+          <div id="santander-smile" class="data">
+            0
+          </div>
+          //-->
+          <p>今日集まったいいね</p>
+          <p>
+          <img class="smile" src="./img/smile.png">
+          <img class="cross" src="./img/cross.png"></img>
+          <span id="santander-smile" class="smile-data">0</span>
+          </p>
+        </div>
+      </div>
+      <div id="fujisawa" class="inner-contents">
+        <h2>藤沢
+        <img class="flag" src="./img/flag-jp.png"></img>
+        </h2>
+        <div class="data-area">
+          <!--
+          <p>今日の空気キレイ度</p>
+          <div id="fujisawa-smile" class="data">
+            0
+          </div>
+          //-->
+          <p>今日集まったいいね</p>
+          <p>
+          <img class="smile" src="./img/smile.png"></img>
+          <img class="cross" src="./img/cross.png"></img>
+          <span id="fujisawa-smile" class="smile-data">0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="footer-area"></div>
+    </center>
+  </body>
+  <footer>
+    <link href="./css/cnc.css" rel="stylesheet" type="text/css">
+  </footer>
+</html>
