@@ -70,7 +70,7 @@ window.onload = function() {
                 stack: true,
                 position: 'mid-center',
                 textAlign: 'center',
-                hideAfter: true
+                hideAfter: 2000 
             });
             //setTimeout("openCNC()", 1500);
         }
