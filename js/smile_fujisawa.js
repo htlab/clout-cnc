@@ -20,7 +20,7 @@ window.onload = function() {
 
 		setTimeout(function(){
 			client.disconnect();
-            goResultPage();
+            openCNC();
 		}, 57000);
 
         var deviceNames = [
