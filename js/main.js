@@ -173,7 +173,7 @@ function setSmileLevel(id, degree){
 }
 
 function openCNC() {
-    location.replace("https://www.ht.sfc.keio.ac.jp/~shinny/fujisawa-2015f/renewal/cnc.html");
+    location.replace("https://sox.ht.sfc.keio.ac.jp/~richie/clout-cnc/cnc.html");
 }
 
 function openEngCNC() {
