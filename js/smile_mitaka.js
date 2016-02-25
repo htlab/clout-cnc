@@ -66,7 +66,7 @@ window.onload = function() {
 
             $.toast({
                 bgColor: '#32cd32',
-                text: "いいねが溜まったよ！ありがとう！",
+                text: "いいねが溜まったよ！",
                 stack: true,
                 position: 'mid-center',
                 textAlign: 'center',
